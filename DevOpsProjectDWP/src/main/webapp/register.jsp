@@ -24,7 +24,7 @@
 	Email:<input type="text" name="email">
 <label for="start">Date of Birth : </label>
 
-<input type="date" id="dob" name="dob-start"
+<input type="date" id="dob" name="dobstart"
        value="YYYY-MM-DD"
        min="1800-01-01" max="2022-12-31">
 
