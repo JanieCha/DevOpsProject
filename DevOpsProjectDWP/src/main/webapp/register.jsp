@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<h1 style="center">e commerce website</h1>
+
 <nav>
 <ul>
   <li><a href="index.jsp">Home</a></li>
