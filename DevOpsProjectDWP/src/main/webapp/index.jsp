@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style><%@include file="./DWP.css"%></style>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>E commerce website</title>
 </head>
 <body>
-<h1>Testing</h1>
+<h1 style="center">Welcome to "     "</h1>
 </body>
 </html>
