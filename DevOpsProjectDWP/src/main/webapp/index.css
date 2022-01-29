@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+h1{
+	  display:flex;
+  justify-content:center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content:center;
+}
+
+nav a  {
+	  margin: 10px;
+	   color:black;
+}
+
+li {
+	color:black;
+}
+
+a:hover {
+  color: blue;
+}
+
