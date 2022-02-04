@@ -30,7 +30,7 @@
 <label for="start">Date of Birth : </label>
 <br>
 
-<input type="date" id="dob" name="DateOfBirth"
+<input type="date" id="dob" name="DateofBirth"
        value="YYYY-MM-DD"
        min="1800-01-01" max="2022-12-31">
        <br>
