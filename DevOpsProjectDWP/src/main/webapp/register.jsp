@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<h1 style="center">e commerce website</h1>
+
 <nav>
 <ul>
   <li><a href="index.jsp">Home</a></li>
@@ -20,13 +22,18 @@
 
 <form name="myRegForm" action="RegisterServlet" method="post">
 	Name:<input type="text" name="userName">
+	<br>
 	Password:<input type="password" name="password">
+	<br>
 	Email:<input type="text" name="email">
+	<br>
 <label for="start">Date of Birth : </label>
+<br>
 
-<input type="date" id="dob" name="dobstart"
+<input type="date" id="dob" name="DateOfBirth"
        value="YYYY-MM-DD"
        min="1800-01-01" max="2022-12-31">
+       <br>
 
 	<input type="submit" value="Register an account"/>
 </form>

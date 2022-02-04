@@ -44,7 +44,7 @@ public class RegisterServlet extends HttpServlet {
 		String n = request.getParameter("userName");
 		String p = request.getParameter("password");
 		String e = request.getParameter("email");
-		String c = request.getParameter("dobstart");
+		String c = request.getParameter("DateOfBirth");
 		
 		try {
 			 Class.forName("com.mysql.jdbc.Driver");
