@@ -1,9 +1,10 @@
 
 public class User {
-	
+
 	protected String name;
 	protected String password;
 	protected String email;
+	protected String DateOfBirth;
 	public User(String name, String password, String email, String dateOfBirth) {
 		super();
 		this.name = name;
@@ -35,6 +36,4 @@ public class User {
 	public void setDateOfBirth(String dateOfBirth) {
 		DateOfBirth = dateOfBirth;
 	}
-	protected String DateOfBirth;
-
 }

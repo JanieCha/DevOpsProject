@@ -113,7 +113,6 @@ public class UserServlet extends HttpServlet {
 			throw new ServletException(ex);
 		}
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-
 	}
 
 	/**
