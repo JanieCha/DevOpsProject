@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style><%@include file="./index.css"%></style>
 <meta charset="ISO-8859-1">
-<title>E commerce website</title>
+<style><%@include file="./register.css"%></style>
+<title>Insert title here</title>
 </head>
 <body>
-<h1 style="center">welcome to our e commerce website</h1>
+<h1 style="center">e commerce website</h1>
 
 <nav>
 <ul>
@@ -26,5 +26,6 @@
 </ul>
 </nav>
 
-</body>
+<p>This e commerce website is contributed by esther , jamie , eugene and gerwyn using Eclipse IDE
+and ... others </p>
 </html>
