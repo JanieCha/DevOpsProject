@@ -26,8 +26,13 @@ a:hover {
   color: blue;
 }
 
-myRegForm , userName , password 
-{
-	display:inline;
+input {
+	margin:10px;
+	display:flex;
+	justify-content:center;
+}
+
+myRegForm {
+	display:flex;
 	justify-content:center;
 }
