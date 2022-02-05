@@ -28,11 +28,12 @@ a:hover {
 
 input {
 	margin:10px;
+
+}
+
+
+.main {
 	display:flex;
 	justify-content:center;
 }
 
-myRegForm {
-	display:flex;
-	justify-content:center;
-}
