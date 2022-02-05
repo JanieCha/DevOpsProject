@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<web-app version="2.5" 
-	xmlns="http://java.sun.com/xml/ns/javaee" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <servlet>
-    <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>LoginServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>indexServlet</servlet-name>
-    <servlet-class>indexServlet</servlet-class>
-  </servlet>
-
-
-  <servlet-mapping>
-    <servlet-name>LoginServlet</servlet-name>
-    <url-pattern>/LoginServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>indexServlet</servlet-name>
-    <url-pattern>/indexServlet</url-pattern>
-  </servlet-mapping>
- 
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>DevOpsProjectDWP</display-name>
   <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
+  <servlet>
+ <servlet-name>UserServlet</servlet-name>
+ <servlet-class>UserServlet</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+ <servlet-name>UserServlet</servlet-name>
+<url-pattern>/UserServlet/dashboard</url-pattern>
+ <url-pattern>/UserServlet/edit</url-pattern>
+ <url-pattern>/UserServlet/update</url-pattern>
+ <url-pattern>/UserServlet/delete</url-pattern>
+ </servlet-mapping>
 </web-app>
+
+
+
