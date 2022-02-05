@@ -1,10 +1,16 @@
-
 public class User {
 
 	protected String name;
 	protected String password;
 	protected String email;
 	protected String DateOfBirth;
+	public User(String name, String password, String email, String dateOfBirth) {
+		super();
+		this.name = name;
+		this.password = password;
+		this.email = email;
+		DateOfBirth = dateOfBirth;
+	}
 	public String getName() {
 		return name;
 	}
@@ -27,13 +33,6 @@ public class User {
 		return DateOfBirth;
 	}
 	public void setDateOfBirth(String dateOfBirth) {
-		DateOfBirth = dateOfBirth;
-	}
-	public User(String name, String password, String email, String dateOfBirth) {
-		super();
-		this.name = name;
-		this.password = password;
-		this.email = email;
 		DateOfBirth = dateOfBirth;
 	}
 	
