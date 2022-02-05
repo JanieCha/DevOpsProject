@@ -39,7 +39,7 @@
 				<ul>
 					<li><a style='color: white' href="index.jsp">Home</a></li>
 					<li><a style='color: white' href="products.jsp">Products</a></li>
-					<li><a style='color: white' href="register.jsp">Account</a></li>
+					<li><a style='color: white' href="UserServlet">Account</a></li>
 					<li><a style='color: white' href="about.asp">About</a></li>
 					<li><a style='color: white' href="register.jsp">Register / Login</a></li>
  					<li><a style='color: white' href="LogoutServlet">Logout</a></li>
