@@ -17,6 +17,6 @@
   <li><a href="register.jsp">Account</a></li>
   <li><a href="about.asp">About</a></li>
 </ul>
-</nav>
+
 </body>
 </html>

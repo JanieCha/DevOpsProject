@@ -97,18 +97,20 @@ public class UserServlet extends HttpServlet {
 		String action = request.getServletPath();
 		try {
 			switch (action) {
-			case "/insert":
-				break;
-			case "/delete":
-				break;
-			case "/edit":
-				break;
-			case "/update":
-				break;
-			default:
-				listUsers(request, response);
-				break;
-			}
+			 case "/UserServlet/delete":
+			 deleteUser(request, response);
+			 break;
+			 case "/UserServlet/edit":
+			 showEditForm(request, response);
+			 break;
+			 case "/UserServlet/update":
+			 updateUser(request, response);
+			 break;
+			 case "/UserServlet/dashboard":
+			 listUsers(request, response);
+			 break;
+			 }
+
 		} catch (SQLException ex) {
 			throw new ServletException(ex);
 		}
@@ -123,6 +125,78 @@ public class UserServlet extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+	}
+	
+	//method to get parameter, query database for existing user data and redirect to user edit page
+	private void showEditForm(HttpServletRequest request, HttpServletResponse response)
+	throws SQLException, ServletException, IOException {
+
+		//get parameter passed in the URL
+		String name = request.getParameter("name");
+		User existingUser = new User("", "", "", "");
+		// Step 1: Establishing a Connection
+		try (Connection connection = getConnection();
+		// Step 2:Create a statement using connection object
+		PreparedStatement preparedStatement =
+		connection.prepareStatement(SELECT_USER_BY_ID);) {
+		preparedStatement.setString(1, name);
+		// Step 3: Execute the query or update query
+		ResultSet rs = preparedStatement.executeQuery();
+		// Step 4: Process the ResultSet object
+		while (rs.next()) {
+		name = rs.getString("name");
+		String password = rs.getString("password");
+		String email = rs.getString("email");
+		String language = rs.getString("language");
+		existingUser = new User(name, password, email, language);
+		}
+		} catch (SQLException e) {
+		System.out.println(e.getMessage());
+		}
+		//Step 5: Set existingUser to request and serve up the userEdit form
+		request.setAttribute("user", existingUser);
+		request.getRequestDispatcher("/userEdit.jsp").forward(request, response);
+		}
+	
+	//method to update the user table base on the form data
+	private void updateUser(HttpServletRequest request, HttpServletResponse response)
+	throws SQLException, IOException {
+	//Step 1: Retrieve value from the request
+	String oriName = request.getParameter("oriName");
+	 String name = request.getParameter("name");
+	 String password = request.getParameter("password");
+	 String email = request.getParameter("email");
+	 String language = request.getParameter("language");
+
+	 //Step 2: Attempt connection with database and execute update user SQL query
+	 try (Connection connection = getConnection(); PreparedStatement statement =
+	connection.prepareStatement(UPDATE_USERS_SQL);) {
+	 statement.setString(1, name);
+	 statement.setString(2, password);
+	 statement.setString(3, email);
+	 statement.setString(4, language);
+	 statement.setString(5, oriName);
+	 int i = statement.executeUpdate();
+	 }
+	 //Step 3: redirect back to UserServlet (note: remember to change the url to your project
+	//name)
+	 response.sendRedirect("http://localhost:8090/DevOpsProjectDWP/UserServlet/dashboard");
+	}
+	
+	//method to delete user
+	private void deleteUser(HttpServletRequest request, HttpServletResponse response)
+	throws SQLException, IOException {
+	//Step 1: Retrieve value from the request
+	 String name = request.getParameter("name");
+	 //Step 2: Attempt connection with database and execute delete user SQL query
+	 try (Connection connection = getConnection(); PreparedStatement statement =
+	connection.prepareStatement(DELETE_USERS_SQL);) {
+	 statement.setString(1, name);
+	 int i = statement.executeUpdate();
+	 }
+	 //Step 3: redirect back to UserServlet dashboard (note: remember to change the url to
+	//your project name)
+	 response.sendRedirect("http://localhost:8090/DevOpsProjectDWP/UserServlet/dashboard");
 	}
 
 }
