@@ -10,7 +10,8 @@
 <body>
 
 
-<%--<nav>
+
+<%--<nav
 <ul>
   <li><a href="index.jsp">Home</a></li>
   <li><a href="products.jsp">Products</a></li>
@@ -25,6 +26,7 @@
  
 </ul>
 </nav> --%>
+
   
   
   <div class="dropdown">
