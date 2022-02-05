@@ -10,7 +10,8 @@
 <body>
 
 
-<nav>
+
+<%--<nav
 <ul>
   <li><a href="index.jsp">Home</a></li>
   <li><a href="products.jsp">Products</a></li>
@@ -24,7 +25,8 @@
  <li><a href="LogoutServlet">Logout</a></li>
  
 </ul>
-</nav>
+</nav> --%>
+
   
   
   <div class="dropdown">
@@ -41,6 +43,8 @@
 					<li><a style='color: white' href="products.jsp">Products</a></li>
 					<li><a style='color: white' href="register.jsp">Account</a></li>
 					<li><a style='color: white' href="about.asp">About</a></li>
+					<li><a style='color: white' href="register.jsp">Register / Login</a></li>
+ 					<li><a style='color: white' href="LogoutServlet">Logout</a></li>
 				</ul>
 			</nav>
 		</div>
