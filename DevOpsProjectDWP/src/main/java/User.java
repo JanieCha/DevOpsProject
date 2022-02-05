@@ -36,4 +36,5 @@ public class User {
 	public void setDateOfBirth(String dateOfBirth) {
 		DateOfBirth = dateOfBirth;
 	}
+	
 }
