@@ -27,5 +27,5 @@
 </nav>
 
 <p>This e commerce website is contributed by esther , jamie , eugene and gerwyn using Eclipse IDE
-and ... others </p>
+and ... others to show SCM and version control etc ..</p>
 </html>
