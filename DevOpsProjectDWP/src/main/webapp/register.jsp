@@ -30,6 +30,7 @@
 
 
 <form name="myRegForm" action="RegisterServlet" method="post">
+<h1>REGISTER</h1>
 	Name:<input type="text" name="userName">
 	<br>
 	Password:<input type="password" name="password">
@@ -46,6 +47,17 @@
 
 	<input type="submit" value="Register an account"/>
 </form>
+
+<div class="login">
+<h1>LOGIN</h1>
+<form name="myLoginForm" action="LoginServlet" method="post">
+  	Email:<input type="text" name="email">
+	<br>
+	Password:<input type="password" name="password">
+	<br>
+      <input type="submit" value="Login">
+</form>
+</div>
 
 </body>
 </html>
