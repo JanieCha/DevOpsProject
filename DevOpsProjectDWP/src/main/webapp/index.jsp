@@ -20,6 +20,7 @@ index
 <body>
 	<h1 style="">welcome to our e commerce website</h1>
 
+
 	<nav>
 		<ul>
 			<li><a href="index.jsp">Home</a></li>
@@ -36,6 +37,8 @@ index
 			<li><a href="LogoutServlet">Logout</a></li>
 
 		</ul>
-	</nav>
+	</nav
+
+
 </body>
 </html>
