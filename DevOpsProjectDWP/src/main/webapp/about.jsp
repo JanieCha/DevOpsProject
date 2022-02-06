@@ -29,5 +29,5 @@
 
 
 <p>This e commerce website is contributed by esther , jamie , eugene and gerwyn using Eclipse IDE
-and ... others </p>
+and XAMMP others to show ... SCM and VC </p>
 </html>
