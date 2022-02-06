@@ -29,5 +29,10 @@
 
 
 <p>This e commerce website is contributed by esther , jamie , eugene and gerwyn using Eclipse IDE
+<<<<<<< HEAD
 and XAMMP others to show ... SCM and VC </p>
+=======
+and ... others - by Esther</p>
+<p>Feel free to buy any products from here! - by Jamie</p>
+>>>>>>> branch 'master' of https://github.com/JanieCha/DevOpsProject.git
 </html>
