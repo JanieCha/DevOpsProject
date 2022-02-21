@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-21T13:30:16 SGT" name="Default suite" finished-at="2022-02-21T13:30:17 SGT" duration-ms="1279">
+    <groups>
+    </groups>
+    <test started-at="2022-02-21T13:30:16 SGT" name="Default test" finished-at="2022-02-21T13:30:17 SGT" duration-ms="1279">
+      <class name="DevOpsTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:DevOpsTest@156b88f5]" started-at="2022-02-21T13:30:16 SGT" name="beforeTest" finished-at="2022-02-21T13:30:17 SGT" duration-ms="1130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="checkId()[pri:0, instance:DevOpsTest@156b88f5]" started-at="2022-02-21T13:30:17 SGT" name="checkId" finished-at="2022-02-21T13:30:17 SGT" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkId -->
+        <test-method signature="checkTitle()[pri:0, instance:DevOpsTest@156b88f5]" started-at="2022-02-21T13:30:17 SGT" name="checkTitle" finished-at="2022-02-21T13:30:17 SGT" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
+      </class> <!-- DevOpsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

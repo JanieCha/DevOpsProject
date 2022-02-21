@@ -12,10 +12,10 @@
 <title>E commerce website</title>
 </head>
 <body>
-	<h1 style="">welcome to our e commerce website</h1>
+	<%--<h1 style="">welcome to our e commerce website</h1>
 
 
-	<%--<nav>
+	<nav>
 		<ul>
 			<li><a href="index.jsp">Home</a></li>
 			<li><a href="products.jsp">Products</a></li>
