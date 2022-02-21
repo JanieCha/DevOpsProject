@@ -3,7 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style><%@include file ="./index.css"%></style>
+<style>
+<%@include file ="./index.css"%>
+</style>
+
 <meta charset="ISO-8859-1">
 <title>E commerce website</title>
 </head>
@@ -42,7 +45,7 @@
 					<li><a style='color: white' href="index.jsp">Home</a></li>
 					<li><a style='color: white' href="products.jsp">Products</a></li>
 					<li><a style='color: white' href="UserServlet">Account</a></li>
-					<li><a style='color: white' href="about.asp">About</a></li>
+					<li><a style='color: white' href="about.jsp">About</a></li>
 					<li><a style='color: white' href="register.jsp">Register / Login</a></li>
  					<li><a style='color: white' href="LogoutServlet">Logout</a></li>
 				</ul>
