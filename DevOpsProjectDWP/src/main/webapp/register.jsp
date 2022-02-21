@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,26 +9,26 @@
 </head>
 <body>
 
-<h1 style="center">e commerce website</h1>
 
-<nav>
-<ul>
-  <li><a href="index.jsp">Home</a></li>
-  <li><a href="products.jsp">Products</a></li>
-  <li><a href="about.jsp">About</a></li> 
-  <li><a href="ProfileServlet">Profile</a></li> 
- 
-</ul>
+	<nav>
+		<ul>
+			<li><a href="index.jsp">Home</a></li>
+			<li><a href="products.jsp">Products</a></li>
+			<li><a href="about.jsp">About</a></li>
+			<li><a href="ProfileServlet">Profile</a></li>
 
-<ul>
- <li><a href="register.jsp">Register / Login</a></li>
- <li><a href="LogoutServlet">Logout</a></li>
- 
-</ul>
-</nav>
+		</ul>
 
-<div class="main">
-<div class="reg">
+
+
+		<ul>
+			<li><a href="register.jsp">Register / Login</a></li>
+			<li><a href="LogoutServlet">Logout</a></li>
+
+		</ul>
+	</nav>
+
+
 <form name="myRegForm" action="RegisterServlet" method="post">
 	Name:<input type="text" name="userName">
 	<br>
@@ -47,18 +47,5 @@
 	<input type="submit" value="Register an account"/>
 </form>
 
-<div class="login">
-<form name="myLoginForm" action="LoginServlet" method="post">
-  	Email:<input type="text" name="email">
-	<br>
-	Password:<input type="password" name="password">
-	<br>
-
-      <input type="submit" value="Login">
-</form>
-
-</div>
-</div>
-</div>
 </body>
 </html>
