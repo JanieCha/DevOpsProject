@@ -1,34 +1,37 @@
-// Declarative //
 pipeline {
     agent any
-
     stages {
-        stage('Build') {
+        stage('build') {
+            when {
+                expression {
+                    BRANCH_NAME == 'JamieBranch'
+                }
+            }
             steps {
-                echo 'Building..'
+                echo 'building the application...'
             }
         }
-        stage('Test') {
+        
+        stage('test') {
+            when {
+                expression {
+                    BRANCH_NAME == 'JamieBranch'
+                }
+            }
             steps {
-                echo 'Testing..'
+                echo 'testing the application...'
             }
         }
-        stage('Deploy') {
+        
+        stage('deploy') {
+            when {
+                expression {
+                    BRANCH_NAME == 'JamieBranch'
+                }
+            }
             steps {
-                echo 'Deploying....'
+                echo 'deploying the application...'
             }
         }
-    }
-}
-// Script //
-node {
-    stage('Build') {
-        echo 'Building....'
-    }
-    stage('Test') {
-        echo 'Building....'
-    }
-    stage('Deploy') {
-        echo 'Deploying....'
     }
 }
