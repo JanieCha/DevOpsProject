@@ -1,22 +1,34 @@
+// Declarative //
 pipeline {
     agent any
+
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                echo 'building the application...'
+                echo 'Building..'
             }
         }
-        
-        stage('test') {
+        stage('Test') {
             steps {
-                echo 'testing the application...'
+                echo 'Testing..'
             }
         }
-        
-        stage('deploy') {
+        stage('Deploy') {
             steps {
-                echo 'deploying the application...'
+                echo 'Deploying....'
             }
         }
+    }
+}
+// Script //
+node {
+    stage('Build') {
+        echo 'Building....'
+    }
+    stage('Test') {
+        echo 'Building....'
+    }
+    stage('Deploy') {
+        echo 'Deploying....'
     }
 }
