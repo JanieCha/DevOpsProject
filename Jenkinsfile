@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             when {
                 expression {
-                    BRANCH_NAME == 'JamieBranch'
+                    BRANCH_NAME == 'EstherBranch'
                 }
             }
             steps {
@@ -15,7 +15,7 @@ pipeline {
         stage('test') {
             when {
                 expression {
-                    BRANCH_NAME == 'JamieBranch'
+                    BRANCH_NAME == 'EstherBranch'
                 }
             }
             steps {
@@ -26,7 +26,7 @@ pipeline {
         stage('deploy') {
             when {
                 expression {
-                    BRANCH_NAME == 'JamieBranch'
+                    BRANCH_NAME == 'EstherBranch'
                 }
             }
             steps {
