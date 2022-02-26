@@ -29,6 +29,7 @@
 			<version>2.3.1</version>
 			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
  <groupId>mysql</groupId>
  <artifactId>mysql-connector-java</artifactId>
@@ -45,6 +46,8 @@
 				<version>3.8.1</version>
 				<configuration>
 					<release>15</release>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>

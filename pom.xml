@@ -3,5 +3,8 @@
   <groupId>DevOpsProject</groupId>
   <artifactId>DevOpsProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+	<name>project</name>
+	<description>DevOps Project</description>
 
 </project>
